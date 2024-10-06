@@ -21,5 +21,19 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run unit tests
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Run Prettier
+        run: npm run format
+
+      - name: Run unit tests and check coverage
         run: npm test
+
+      # Пример, изменить на то, что будет использоваться в проекте.
+      - name: Install Cypress
+        run: npm install cypress
+
+      # В package.json также не забыть изменить утилиту (то, что выше).
+      - name: Run E2E tests
+        run: npm run e2e

@@ -1,0 +1,21 @@
+{
+  "_comment" : "ПРИМЕР! НЕОБХОДИМО ЗАМЕНИТЬ НА ТО, ЧТО БУДЕТ ИСПОЛЬЗОВАТЬСЯ В ПРОЕКТЕ!",
+  "scripts": {
+    "test": "jest --coverage",
+    "e2e": "cypress run",
+    "lint": "eslint . --ext .js,.ts",
+    "format": "prettier --check .",
+    "fix": "eslint --fix . && prettier --write ."
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  }
+}
